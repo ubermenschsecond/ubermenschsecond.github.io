@@ -1,39 +1,62 @@
 <html>
 <head>
-<title>Second site</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<!-- начало header-->
-  <ul class="menu cf">
-  <li><a href="#">Домой</a></li>
-  <li>
-    <a href="#">Информация</a>
-    <ul class="submenu">
-      <li><a href="#">Новости</a></li>
-      <li><a href="#">Источники</a></li>
-      <li><a href="#">Обзоры</a></li>
-      <li><a href="#">Комментарии</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Контакты</a></li>
-  <li><a href="#">Обо мне</a></li>
-</ul>
-<!-- конец header-->
+<title>PhotoPage</title>
+  <link rel="stylesheet" type="text/css" href="startstyle.css">
+<style>
+   body {
+    background: url(фон.jpg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+   }
+  </style>
+
 </head>
 <body>
+<a href="index.html"><img src="2.png" width= "7%" ></a>
+<style>
+img {
+margin-top: 400px;
+margin-left:550px;
+}
+</style>
+<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
 
-<p>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="450px" height="240px" xml:space="preserve">
+  <defs>
+    <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+      <path fill="#1E90FF" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+    </pattern>
+    
+    <text  id="text" transform="translate(2,116)" font-family="'Cabin Condensed'" font-size="161.047">Фото</text>
+    
+    <mask id="text-mask">
+      <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
+    </mask>
+    
+    <g id="eff">
+      <use x="0" y="0" xlink:href="#text" fill="#FFFFFF"/>
+  
+  <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="50" width="1200" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="2s"/>
+  </rect>
+   <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="45" width="1600" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="3s"/>
+  </rect>
+      
+  <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="800" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="1.4s"/>
+  </rect>
+      <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="2000" height="120" opacity="0.3">
+    <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="2.8s"/>
+  </rect>
+    </g>
+  </defs>
+ 
+      <use xlink:href="#eff" opacity="0.9" style="mix-blend-mode:color-burn"/>
 
 
-
-
-
-
-
-
-</p>
-<img class="grow" src="слайдер/1.jpg" >
-<img class="shrink" src="слайдер/2.jpg" >
-<img class="grow" src="слайдер/3.jpg" >
 </body>
 </html>
