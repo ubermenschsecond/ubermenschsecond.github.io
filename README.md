@@ -1,1 +1,0 @@
-# ubermenschsecond.github.io
