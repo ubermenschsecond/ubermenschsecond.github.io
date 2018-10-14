@@ -21,13 +21,7 @@
 </ul>
 <!-- конец header-->
 
-<style type="text/css">
-    .galleria{ width: 700px;
-	height: 400px;
-	background: #000;
-margin-top: 820px;
-margin-left:-840px;	}
-</style>
+	
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 <script src="galleria/galleria-1.4.2.min.js"></script>
 </head>
@@ -130,22 +124,34 @@ min-width: 1000px;background: #22313F url(http://hello-site.ru//main/images/prel
 var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;
 if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}
 window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
-	
-	<div class="galleria">
-    <img src="Слайдер/6.jpg">
-	<img src="Слайдер/7.jpg">
-    <img src="Слайдер/8.jpg">
-    <img src="Слайдер/9.jpg">
-	<img src="Слайдер/10.jpg">
-    <img src="Слайдер/11.jpg">
-    <img src="Слайдер/12.jpg">
 
+
+
+<ul id="slides">
+	<li class="slide showing"><img src="Слайдер/12.jpg"></li>
+
+
+	<li class="slide"><img src="Слайдер/8.jpg"></li>
+	<li class="slide"><img src="Слайдер/9.jpg"></li>
+	<li class="slide"><img src="Слайдер/10.jpg"></li>
+	<li class="slide"><img src="Слайдер/12.jpg"></li>
+	<li class="slide"><img src="Слайдер/13.jpg"></li>
+	<li class="slide"><img src="Слайдер/14.jpg"></li>
 	
-</div>
-<script>
-            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-            Galleria.run('.galleria');
-</script>
+	
+	
+</ul>
+ <script type="text/javascript">
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slide showing';
+}
+    </script>
 <!-- Таймер -->
 <script type="text/javascript" src="http://yandex.st/jquery/2.0.3/jquery.min.js"></script>
 
@@ -169,8 +175,6 @@ window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader)
 								</div>
 							</div>
 <p class="hellotimercopy"><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p>
-
-
 	</body>
 
 </html>
