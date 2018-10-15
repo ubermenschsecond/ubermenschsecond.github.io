@@ -9,7 +9,7 @@ body {
  
 }
 #rectangle{
-    width:2000px;
+    width:1670px;
     height:100px;
     background:linear-gradient(to  left, powderblue, pink);
 }
@@ -169,7 +169,7 @@ html, body {
 .container {
   position: absolute;
   margin: auto;
-  top: -830;
+  top: -850;
   left: 1320;
   right: 0;
   bottom: 0;
