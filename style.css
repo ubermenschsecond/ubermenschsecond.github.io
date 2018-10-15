@@ -6,13 +6,26 @@ body {
 	
  background: #e2e2e2;
     
-    padding: 10px;
+ 
+}
+#rectangle{
+    width:2000px;
+    height:100px;
+    background:linear-gradient(to  left, powderblue, pink);
+}
+p{
+  font-family: "Monotype Corsiva";
+   font-size: 60px;
+   color: #cc7722;
+     margin-left: 700px ;
+	
+   
 }
 /* Настройка меню*/
 .menu {
   list-style:none;
   margin-top:60px;
-  margin-left: 560px ;
+  margin-left: 500px ;
   width: 800px;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -156,7 +169,7 @@ html, body {
 .container {
   position: absolute;
   margin: auto;
-  top: -750;
+  top: -830;
   left: 1320;
   right: 0;
   bottom: 0;
@@ -307,3 +320,10 @@ margin-top:820px;
 	
 	color: #fff;
 }
+
+
+
+
+
+
+
