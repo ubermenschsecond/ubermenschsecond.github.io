@@ -14,24 +14,36 @@ body {
     background:linear-gradient(to  left, powderblue, pink);
 }
 	@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+	
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-p{
+.namesite{
   font-family: "Monotype Corsiva";
    font-size: 60px;
    color: #cc7722;
-     margin-left: 700px ;
+margin-left:0px;
 	
-   
+   text-align:center;
 }
+.razdel {
+	text-align:center;
+	
+	margin-top:90px;
+	font-family:"Palatino Linotype";
+	font-size: 36px;
+	color: #34495e;
+}
+	
+	
 /* Настройка меню*/
 .menu {
   list-style:none;
-  position: absolute;
-  left:470px;
+
+
+  position:center;
   margin-top:10px;
   margin: auto;
   width: 800px;
@@ -129,9 +141,12 @@ p{
 /* Анимация картинки */
  body > img
         {
-	    text-align: center;
 
-	padding-left: 25px;
+
+        min-width: 200px;
+        min-height: 100px;
+text-align:center;
+	padding-left: 50px;
 margin-top: 60px;	
 		display: block; 
         
