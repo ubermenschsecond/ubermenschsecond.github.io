@@ -13,3 +13,20 @@ svg{
   left: 50%;
   margin-left: -225px;
 }
+#rectangle2{
+	margin-top:350px;
+    width:auto;
+    height:200px;
+background:black;
+
+
+	
+}
+.namesite{
+  font-family: "Monotype Corsiva";
+   font-size: 100px;
+   color: #cc7722;
+margin-left:0px;
+	margin-top:100;
+   text-align:center;
+}
